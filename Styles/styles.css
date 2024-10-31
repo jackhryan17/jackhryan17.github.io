@@ -1,0 +1,216 @@
+/*Jack Ryan
+ * Lab 2
+ * CSS*/
+
+* {
+    margin: 10px auto;
+    padding: 0;
+}
+
+html {
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 2024px) { 
+    #mobile_menu { display: none; }    
+}
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) { 
+    #mobile_menu { display: none; } 
+}
+/* mobile landscape layout (480px to 767px) */ 
+
+@media only screen and (max-width: 767px) { 
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }       /* 22 ÷ 16 */ 
+    header h3 { font-size: .8125em; }   /* 13 ÷ 16 */ 
+    p { font-size: .875em; }            /* 14 ÷ 16 */ 
+    article h1, main h2, aside h2
+        { font-size: 1em; }             /* base font size */ 
+    aside li { font-size: .875em; }     /* 14 ÷ 16 */
+    th, td {display: block;}
+    thead {display: none;}
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+        background-color: yellow;
+    }
+    tbody td {
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: none
+    }
+    tfoot {display: none;}
+    
+}
+/* mobile portrait layout (479px or less) */ 
+
+@media only screen and (max-width: 479px) { 
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }   /* 22 ÷ 16 */ 
+    header h3 { font-size: .8125em; }   /* 13 ÷ 16 */ 
+    p { font-size: .875em; }            /* 14 ÷ 16 */ 
+    article h1, main h2, aside h2 
+        { font-size: 1em; }             /* base font size */ 
+    aside li { font-size: .875em; }     /* 14 ÷ 16 */
+  
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 90%;
+    max-width: 1024px;
+    border: 10px double blue;
+    background-color: white;
+}
+
+main {
+    padding: 1.5em;
+}
+
+h1 {
+    font-size: 150%;
+    color: blue;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 125%;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 110%;
+    padding: 10px;
+}
+
+img {
+    margin: .5em 1em .25em .5em;
+    border: 10px solid blue;
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#image1 {
+    background-image: url("../Images/JACK-S-BICYCLE-SHOP-10-19-2024.png");
+    width: 290px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+#image1:hover  {
+    background-image: url("../Images/JACK-S-BICYCLE-SHOP-10-19-2024%20(1).png");
+}
+
+blockquote {
+    padding-bottom: 0.25em;
+}
+
+
+ul {
+    margin-left: 1.25em;
+}
+
+li {
+    padding-bottom: 0.35em;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+address {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+pre {
+    padding-left: 10px;
+}
+
+video {
+    max-width: 800px;
+    margin: 5%;
+}
+
+#nav_menu ul {
+     list-style-type: none; padding: 1em 0;
+     font-size: 1.5em;
+     text-align: left;
+     } 
+#nav_menu ul li { 
+    display: inline; 
+    padding: 0 1em; } 
+#nav_menu ul li a { 
+    font-weight: bold; 
+    color: steelblue; }
+#nav_menu ul li a.current { text-decoration: none; }
+
+/* Special main image on index page with blue border and rounded corner- must have .bluetouch div class */ 
+.bluetouch img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #B5D3E7;
+    margin: 0;
+    padding: 0;
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    position: relative;
+    right: 10px; 
+    top: 10px; 
+}
+
+figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    border: 1px solid black;
+    width: 95%;
+    margin: auto;
+    padding: .75em;
+}
+
+figcaption {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    padding-bottom: .25em;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right;
+}
+
+th.left, td.left {
+    text-align: left;
+}
+
+thead, tfoot {
+    background-color: yellow;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightyellow;
+}
